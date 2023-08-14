@@ -1,0 +1,11 @@
+.nav {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  background: #ad68d5;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: azure;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}

@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  margin: auto;
+  max-width: 800px;
+  justify-content: center;
+}
+.text {
+  margin: 0;
+  margin-top: 200px;
+  min-width: 200px;
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-size: 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #069468;
+  color: #050801;
+  box-shadow: 0 0 5px #529f9f, 0 0 25px #27c005, 0 0 50px #f16161,
+    0 0 200px #432066;
+}
+.text:nth-child(1) {
+  filter: hue-rotate(110deg);
+}

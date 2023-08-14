@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.username {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.container button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: aliceblue;
+  cursor: pointer;
+}
+.container button:hover {
+  background-color: azure;
+}
