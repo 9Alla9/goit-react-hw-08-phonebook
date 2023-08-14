@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, lazy } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { useAuth } from 'hooks/useAuth';
@@ -7,10 +7,10 @@ import { RestrictedRoute } from 'components/subRoutes/RestrictedRoute';
 import { PrivateRoute } from 'components/subRoutes/PrivateRoute';
 import { Layout } from 'components/Layouts/Main';
 
-import RegisterPage from 'pagas/Register';
-import LoginPage from 'pagas/Login';
-import Contacts from 'pagas/Contacts';
-import HomePage from 'pagas/Home/Home';
+const HomePage = lazy(() => import('pagas/Home/Home'));
+const RegisterPage = lazy(() => import('pagas/Register'));
+const LoginPage = lazy(() => import('pagas/Login'));
+const Contacts = lazy(() => import('pagas/Contacts'));
 
 const App = () => {
   const dispatch = useDispatch();
